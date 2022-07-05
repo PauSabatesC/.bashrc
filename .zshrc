@@ -9,3 +9,5 @@ function aws-profile() {
     AWS_PROFILE=$(sed -nE 's/^\[(.*)\]/\1/p' ~/.aws/credentials | percol)
     export AWS_PROFILE
 }
+
+export LESS=-FRX
